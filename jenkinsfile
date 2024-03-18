@@ -19,7 +19,7 @@ pipeline {
 
         stage('Archive File') {
             steps {
-                archiveArtifacts artifacts: '**/*.js', fingerprint: true
+                archiveArtifacts artifacts: 'lab3task7.js', fingerprint: true
             }
         }
     }
