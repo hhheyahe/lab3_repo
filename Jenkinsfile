@@ -23,16 +23,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        success {
-            // Actions performed only when the pipeline succeeds
-            // For example, sending a notification about successful deployment
-        }
-
-        failure {
-            // Actions performed only when there is an error in the pipeline
-            // For example, sending a notification about the error or triggering a pipeline retry
-        }
-    }
 }
