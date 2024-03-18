@@ -10,11 +10,11 @@ pipeline {
             }
         }
 
-    stage('Build JavaScript') {
-          steps {
-            sh 'npm run build'
-          }
-        }
+        stage('Build JavaScript') {
+              steps {
+                sh 'npm run build'
+              }
+            }
         
         stage('Archive File') {
             steps {
