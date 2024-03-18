@@ -12,6 +12,7 @@ pipeline {
 
         stage('Build JavaScript') {
               steps {
+                sh 'npm install'
                 sh 'npm run build'
               }
             }
