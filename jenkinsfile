@@ -12,9 +12,7 @@ pipeline {
 
         stage('Archive File') {
             steps {
-                sh """
-                    archiveArtifacts artifacts: '**/*', fingerprint: true
-                """
+                    archiveArtifacts artifacts: 'Jenkinsfile', fingerprint: true
             }
         }
     }
