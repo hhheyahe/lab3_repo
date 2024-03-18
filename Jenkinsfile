@@ -10,12 +10,6 @@ pipeline {
             }
         }
 
-        stage('Build JavaScript') {
-              steps {
-                sh 'npm run build'
-              }
-        }
-
         stage('Archive File') {
             steps {
                 archiveArtifacts artifacts: 'lab3task7.js', fingerprint: true
