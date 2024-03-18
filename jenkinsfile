@@ -4,13 +4,17 @@ pipeline {
     stages {
         stage('Hello World') {
             steps {
-                echo 'Hello, World!'
+                sh """
+                    echo 'Hello, World!'
+                """
             }
         }
 
         stage('Archive File') {
             steps {
-                archiveArtifacts artifacts: '**/*', fingerprint: true
+                sh """
+                    archiveArtifacts artifacts: '**/*', fingerprint: true
+                """
             }
         }
     }
