@@ -13,8 +13,8 @@ pipeline {
         stage('Build JavaScript') {
               steps {
                   sh 'ls -la'
-                //sh 'npm install'
-                //sh 'npm run build'
+                  sh 'npm install'
+                  sh 'npm run build'
               }
             }
         
